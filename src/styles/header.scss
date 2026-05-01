@@ -1,0 +1,54 @@
+@use 'base' as *;
+
+.header {
+	background-color: rgba(250, 249, 248, 0.8);
+	padding: 16px 0;
+	box-shadow: 0 0 50px $clr-bg-dk;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo-link {
+		display: flex;
+	}
+
+	&__logo {
+		width: 100%;
+	}
+
+	&__search {
+		display: flex;
+		align-items: center;
+		column-gap: 14px;
+		flex-grow: 1;
+		padding: 12px 16px;
+		max-width: 375px;
+		border-radius: $border-radius;
+		background-color: $clr-bg-lt;
+	}
+
+	&__search-input {
+		width: 100%;
+		border: none;
+		outline: none;
+		background: transparent;
+		@include font(16px, 24px);
+		font-family: $ff-base;
+	}
+
+	&__select-btn {
+		display: flex;
+		align-items: center;
+		column-gap: 7px;
+		padding: 12px 20px;
+		border: none;
+		border-radius: $border-radius;
+		@include font(16px, 24px, 500);
+		font-family: $ff-base;
+		background-color: $clr-bg-dk;
+		cursor: pointer;
+	}
+}

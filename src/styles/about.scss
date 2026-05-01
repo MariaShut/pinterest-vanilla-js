@@ -1,0 +1,62 @@
+@use 'base' as *;
+
+.about {
+	padding: 32px 0;
+
+	&__container {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__content {
+		width: 672px;
+	}
+
+	&__title {
+		margin-bottom: 16px;
+		font-family: $ff-secondary;
+		@include font(48px, 48px, 800);
+		text-align: center;
+		color: $clr-base;
+	}
+
+	&__descr {
+		margin-bottom: 32px;
+		@include font(16px, 26px);
+		text-align: center;
+		color: $clr-base-lt;
+	}
+
+	&__info {
+		display: flex;
+		justify-content: center;
+		column-gap: 16px;
+	}
+
+	&__avatars {
+		display: flex;
+	}
+
+	&__avatar {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		object-fit: cover;
+		border: 4px solid $clr-bg-body;
+
+		&:not(:first-child) {
+			margin-left: -16px;
+		}
+	}
+
+	&__stats-wrapper {
+		display: flex;
+		align-items: center;
+		column-gap: 5px;
+	}
+
+	&__stats {
+		@include font(14px, 20px, 500);
+		color: $clr-base-lt;
+	}
+}

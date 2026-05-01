@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pinterest</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="./styles/main.scss" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container header__container">
+				<a href="#" class="header__logo-link">
+					<img src="./img/logo.svg" alt="logo" class="header__logo" />
+				</a>
+
+				<div class="header__search">
+					<span class="header__search-icon">
+						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M16.6 18L10.3 11.7C9.8 12.1 9.225 12.4167 8.575 12.65C7.925 12.8833 7.23333 13 6.5 13C4.68333 13 3.14583 12.3708 1.8875 11.1125C0.629167 9.85417 0 8.31667 0 6.5C0 4.68333 0.629167 3.14583 1.8875 1.8875C3.14583 0.629167 4.68333 0 6.5 0C8.31667 0 9.85417 0.629167 11.1125 1.8875C12.3708 3.14583 13 4.68333 13 6.5C13 7.23333 12.8833 7.925 12.65 8.575C12.4167 9.225 12.1 9.8 11.7 10.3L18 16.6L16.6 18ZM6.5 11C7.75 11 8.8125 10.5625 9.6875 9.6875C10.5625 8.8125 11 7.75 11 6.5C11 5.25 10.5625 4.1875 9.6875 3.3125C8.8125 2.4375 7.75 2 6.5 2C5.25 2 4.1875 2.4375 3.3125 3.3125C2.4375 4.1875 2 5.25 2 6.5C2 7.75 2.4375 8.8125 3.3125 9.6875C4.1875 10.5625 5.25 11 6.5 11Z"
+								fill="#5D605F" />
+						</svg>
+					</span>
+					<input type="text" placeholder="Search the archive..." class="header__search-input" />
+				</div>
+
+				<div class="header__select">
+					<button class="header__select-btn">
+						Boards
+						<svg class="header__arrow" width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.5 4.31667L0 0.816667L0.816667 0L3.5 2.68333L6.18333 0L7 0.816667L3.5 4.31667Z" fill="#303333" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+		<section class="about">
+			<div class="container about__container">
+				<div class="about__content">
+					<h1 class="about__title">Curated Minimalism</h1>
+					<p class="about__descr">A personal collection of space, light, and architectural whispers. Each piece selected for its ethereal quality and rhythmic balance.</p>
+
+					<div class="about__info">
+						<div class="about__avatars">
+							<img class="about__avatar" src="./img/avatars/1.jpeg" alt="user" />
+							<img class="about__avatar" src="./img/avatars/2.jpeg" alt="user" />
+							<img class="about__avatar" src="./img/avatars/3.jpeg" alt="user" />
+						</div>
+
+						<div class="about__stats-wrapper">
+							<span class="about__stats">128 Pins</span>
+							<span class="about__stats">•</span>
+							<span class="about__stats">14.2k Followers</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pins">
+			<div class="container pins__container">
+				<article class="pins__item pin">
+					<img src="https://i.pinimg.com/736x/3a/78/ef/3a78ef94dead5cdd2e2aada8964f2c08.jpg" alt="" class="pin__image" />
+					<h3 class="pin__title">Inner court</h3>
+				</article>
+
+				<article class="pins__item pin">
+					<img src="https://i.pinimg.com/736x/1a/b3/76/1ab37628bfe4672b9e4709b17836a3b8.jpg" alt="" class="pin__image" />
+					<h3 class="pin__title">Aesthetic spot</h3>
+				</article>
+
+				<article class="pins__item pin">
+					<img src="https://i.pinimg.com/736x/b4/e0/59/b4e059dbaeba0d9552a98353eda25450.jpg" alt="" class="pin__image" />
+					<h3 class="pin__title">Warm evening light</h3>
+				</article>
+
+				<article class="pins__item pin">
+					<img src="https://i.pinimg.com/1200x/27/b0/01/27b0014f9eb3dd1e2acca52c18ef35c7.jpg" alt="" class="pin__image" />
+					<h3 class="pin__title">Tea ceremony</h3>
+				</article>
+
+				<article class="pins__item pin">
+					<img src="https://i.pinimg.com/736x/c3/54/9b/c3549b2007c70f7d85222ea3338df86b.jpg" alt="" class="pin__image" />
+					<h3 class="pin__title">Victoria amazonica</h3>
+				</article>
+
+				<article class="pins__item pin">
+					<img src="https://i.pinimg.com/736x/be/ff/b7/beffb73168d945a8d23ee98b43397859.jpg" alt="" class="pin__image" />
+					<h3 class="pin__title">Interior inspo</h3>
+				</article>
+
+				<article class="pins__item pin">
+					<img src="https://i.pinimg.com/1200x/19/ce/23/19ce230719d2556ed7c9e4b0fe64583c.jpg" alt="" class="pin__image" />
+					<h3 class="pin__title">Spacious</h3>
+				</article>
+
+				<article class="pins__item pin">
+					<img src="https://i.pinimg.com/1200x/93/1f/21/931f21ca5e80357ce076a09c24ef0018.jpg" alt="" class="pin__image" />
+					<h3 class="pin__title">Cafe terrace</h3>
+				</article>
+
+				<article class="pins__item pin">
+					<img src="https://i.pinimg.com/736x/4a/bf/fa/4abffaaf6fa3e3cf29ba6578daff54c6.jpg" alt="" class="pin__image" />
+					<h3 class="pin__title">Ceramics collection</h3>
+				</article>
+
+				<article class="pins__item pin">
+					<img src="https://i.pinimg.com/736x/2f/26/b5/2f26b5af60cd4497a70dacfe5e4a742c.jpg" alt="" class="pin__image" />
+					<h3 class="pin__title">Matcha mooncakes</h3>
+				</article>
+
+				<article class="pins__item pin">
+					<img src="https://i.pinimg.com/736x/9b/ae/e2/9baee2dcf8af1d7fdd0680e231625e34.jpg" alt="" class="pin__image" />
+					<h3 class="pin__title">Garden entrance</h3>
+				</article>
+
+				<article class="pins__item pin">
+					<img src="https://i.pinimg.com/736x/67/70/7a/67707a2f1a002552748dd1b3667d55a2.jpg" alt="" class="pin__image" />
+					<h3 class="pin__title">Chinese umbrellas</h3>
+				</article>
+
+				<article class="pins__item pin">
+					<img src="https://i.pinimg.com/736x/04/82/d5/0482d57ec1a9753b9ffdebf73318f90a.jpg" alt="" class="pin__image" />
+					<h3 class="pin__title">Brewbar</h3>
+				</article>
+
+				<article class="pins__item pin">
+					<img src="https://i.pinimg.com/1200x/bd/25/20/bd2520e8351d8b57e4150dca5d31fef9.jpg" alt="" class="pin__image" />
+					<h3 class="pin__title">Boat trip</h3>
+				</article>
+
+				<article class="pins__item pin">
+					<img src="https://i.pinimg.com/1200x/fc/7a/af/fc7aaf9a99998aea4de980489a2e3d26.jpg" alt="" class="pin__image" />
+					<h3 class="pin__title">Spa rituals</h3>
+				</article>
+
+				<article class="pins__item pin">
+					<img src="https://i.pinimg.com/1200x/e0/09/16/e009160092895835de0058526b9972f1.jpg" alt="" class="pin__image" />
+					<h3 class="pin__title">Home interior</h3>
+				</article>
+
+				<article class="pins__item pin">
+					<img src="https://i.pinimg.com/736x/c0/5d/24/c05d24f12d60025db4ce71f2221cd1d4.jpg" alt="" class="pin__image" />
+					<h3 class="pin__title">Nature greenery</h3>
+				</article>
+
+				<article class="pins__item pin">
+					<img src="https://i.pinimg.com/736x/dc/16/7f/dc167f114d6bc64b05831b96fa46061f.jpg" alt="" class="pin__image" />
+					<h3 class="pin__title">Hot springs</h3>
+				</article>
+			</div>
+		</section>
+
+		<script src="./js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+{
+	"name": "pinterest-vanilla",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"dev": "parcel ./src/index.html",
+		"build": "parcel build ./src/index.html --no-source-maps"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MariaShut/pinterest-vanilla-js.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"bugs": {
+		"url": "https://github.com/MariaShut/pinterest-vanilla-js/issues"
+	},
+	"homepage": "https://github.com/MariaShut/pinterest-vanilla-js#readme",
+	"dependencies": {
+		"parcel": "^2.16.4"
+	},
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.16.4",
+		"sass": "^1.99.0"
+	}
+}

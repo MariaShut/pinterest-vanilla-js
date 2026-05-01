@@ -1,0 +1,32 @@
+@use 'base' as *;
+
+.pins {
+	padding: 32px 0;
+
+	&__container {
+		column-count: 5;
+		column-gap: 16px;
+
+		@media (max-width: 767px) {
+			column-count: 2;
+		}
+	}
+}
+
+.pin {
+	break-inside: avoid;
+	margin-bottom: 16px;
+
+	&__image {
+		width: 100%;
+		height: auto;
+		border-radius: 32px;
+	}
+
+	&__title {
+		margin-left: 16px;
+		@include font(14px, 20px, 600);
+		font-family: $ff-base;
+		color: $clr-base;
+	}
+}

@@ -1,0 +1,24 @@
+// fonts
+$ff-base: 'Be Vietnam Pro', sans-serif;
+$ff-secondary: 'Plus Jakarta Sans', sans-serif;
+
+// colors
+$clr-ntrl-min: #fff;
+$clr-base-lt: #5d605f;
+$clr-base: #303333;
+$clr-primary: #a13f41;
+
+$clr-bg-lt: #edeeed; // search input
+$clr-bg-base: #faf9f8; // header
+$clr-bg-dk: #e1e3e2; // select
+$clr-bg-body: #fbfaf9;
+
+$clr-placeholder: rgba($clr-base-lt, 0.5);
+
+$border-radius: 30px;
+
+@mixin font($fontSize, $lineHeight, $fontWeight: 400) {
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	font-weight: $fontWeight;
+}

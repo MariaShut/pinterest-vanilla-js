@@ -1,0 +1,23 @@
+@use 'base' as *;
+@use 'header';
+@use 'about';
+@use 'pins';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $ff-base;
+	color: $clr-base;
+	background-color: $clr-bg-body;
+}
+
+.container {
+	max-width: 1232px;
+	padding: 0 20px;
+	margin: 0 auto;
+	width: 100%;
+}
