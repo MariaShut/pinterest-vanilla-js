@@ -21,6 +21,11 @@
 		width: 100%;
 		height: auto;
 		border-radius: 32px;
+
+		@media (max-width: 576px) {
+			aspect-ratio: 1 / 1;
+			object-fit: cover;
+		}
 	}
 
 	&__title {
@@ -28,5 +33,9 @@
 		@include font(14px, 20px, 600);
 		font-family: $ff-base;
 		color: $clr-base;
+
+		@media (max-width: 767px) {
+			font-weight: 700;
+		}
 	}
 }

@@ -13,7 +13,10 @@
 		<header class="header">
 			<div class="container header__container">
 				<a href="#" class="header__logo-link">
-					<img src="./img/logo.svg" alt="logo" class="header__logo" />
+					<picture>
+						<source media="(max-width: 576px)" srcset="./img/logo-mobile.svg" />
+						<img src="./img/logo.svg" alt="logo" class="header__logo" />
+					</picture>
 				</a>
 
 				<div class="header__search">
