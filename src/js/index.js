@@ -1,6 +1,9 @@
-import { loadBoard } from './board.js';
-import { getActiveBoard } from './storage.js';
+import '../styles/main.scss';
+import { fetchPins } from '../api/pins/pins.js';
+import { getActiveBoard } from './board.js';
 import { initDropdown } from './dropdown.js';
+import { initModal } from './modal.js';
+import { initHandlers } from './handlers.js';
 
 const selectBtn = document.querySelector('.header__select-btn');
 const dropdown = document.querySelector('.dropdown');
@@ -9,22 +12,6 @@ const arrow = document.querySelector('.header__arrow');
 
 const { closeDropdown } = initDropdown(selectBtn, dropdown, arrow);
 
-// Choose board
-dropdown.addEventListener('click', async event => {
-	const item = event.target.closest('.dropdown__item');
-	if (!item) return;
-	await loadBoard(item.dataset.id);
-	closeDropdown();
-});
+initModal();
 
-// Logo returns to feed
-logoLink.addEventListener('click', async event => {
-	event.preventDefault();
-	await loadBoard('feed');
-	closeDropdown();
-});
-
-document.addEventListener('DOMContentLoaded', async () => {
-	const savedBoard = getActiveBoard();
-	await loadBoard(savedBoard);
-});
+initHandlers(closeDropdown);

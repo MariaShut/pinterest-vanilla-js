@@ -1,0 +1,155 @@
+@use 'base' as *;
+
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	align-items: center;
+	justify-content: center;
+
+	&_active {
+		display: flex;
+	}
+
+	&__overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.3);
+		backdrop-filter: blur(4px);
+	}
+
+	&__content {
+		position: relative;
+		z-index: 1001;
+		background: $clr-ntrl-min;
+		width: 33%;
+		border-radius: 48px;
+		padding: 32px;
+	}
+
+	&__close {
+		position: absolute;
+		top: 20px;
+		right: 32px;
+		background: none;
+		border: none;
+		font-size: 28px;
+		cursor: pointer;
+		color: $clr-base-lt;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			color: $clr-base;
+		}
+	}
+
+	&__title {
+		font-family: $ff-secondary;
+		@include font(24px, 32px, 700);
+		margin-bottom: 8px;
+		color: $clr-base;
+		text-align: center;
+	}
+
+	&__subtitle {
+		@include font(14px, 20px, 400);
+		color: $clr-base-lt;
+		margin-bottom: 24px;
+		text-align: center;
+	}
+
+	// Search
+
+	&__search-wrapper {
+		position: relative;
+		margin-bottom: 40px;
+	}
+
+	&__search-icon {
+		position: absolute;
+		left: 24px;
+		top: 50%;
+		transform: translateY(-50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		pointer-events: none;
+		width: 18px;
+		height: 18px;
+	}
+
+	&__search-input {
+		width: 100%;
+		padding: 12px 16px 12px 66px;
+		border: 1px solid $clr-bg-dk;
+		border-radius: 40px;
+		@include font(14px, 20px);
+		font-family: $ff-base;
+		background-color: #e7e8e7;
+		outline: none;
+		transition: all 0.3s ease-in-out;
+
+		&:focus {
+			border-color: $clr-primary;
+		}
+	}
+
+	&__list {
+		overflow-y: auto;
+	}
+
+	// Boards
+
+	&__board-item {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		padding: 16px;
+		border-radius: 12px;
+		cursor: pointer;
+		transition: all 0.5s ease-in-out;
+		margin-bottom: 4px;
+
+		&:hover {
+			background-color: $clr-bg-lt;
+		}
+
+		&-icon {
+			width: 44px;
+			height: 44px;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+
+		&-text {
+			display: flex;
+			flex-direction: column;
+			gap: 4px;
+		}
+
+		&-name {
+			@include font(16px, 24px, 500);
+			color: $clr-base;
+		}
+
+		&-count {
+			font-size: 14px;
+			line-height: 20px;
+			color: $clr-base-lt;
+		}
+	}
+
+	&__empty {
+		text-align: center;
+		padding: 32px 0;
+		color: $clr-base-lt;
+		@include font(14px, 20px);
+	}
+}

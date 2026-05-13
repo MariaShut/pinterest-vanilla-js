@@ -1,9 +1,15 @@
-import { fetchPins } from './api.js';
-import { renderPins } from './render.js';
-import { setActiveBoard, getActiveBoard } from './storage.js';
+import { getFromStorage, saveToStorage } from './storage.js';
+
+export function getActiveBoard() {
+	return getFromStorage('activeBoard') || 'feed';
+}
+
+export function setActiveBoard(boardId) {
+	saveToStorage('activeBoard', boardId);
+}
 
 // for checkmark icon
-function updateDropdownActiveBoard(boardId) {
+export function updateDropdownActiveBoard(boardId) {
 	const items = document.querySelectorAll('.dropdown__item');
 
 	items.forEach(item => {
@@ -13,12 +19,4 @@ function updateDropdownActiveBoard(boardId) {
 			item.classList.remove('dropdown__item_active');
 		}
 	});
-}
-
-export async function loadBoard(boardId) {
-	const pins = await fetchPins(boardId);
-
-	renderPins(pins);
-	setActiveBoard(boardId);
-	updateDropdownActiveBoard(boardId);
 }
