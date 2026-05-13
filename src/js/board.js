@@ -8,7 +8,7 @@ export function setActiveBoard(boardId) {
 	saveToStorage('activeBoard', boardId);
 }
 
-// for checkmark icon
+// Show red checkmark on the active board
 export function updateDropdownActiveBoard(boardId) {
 	const items = document.querySelectorAll('.dropdown__item');
 

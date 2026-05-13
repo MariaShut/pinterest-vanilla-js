@@ -22,7 +22,7 @@ export function renderPins(pins) {
 		)
 		.join('');
 
-	// Делегирование событий для кнопки Add to Board
+	// add to board event delegation
 	container.addEventListener('click', event => {
 		const addButton = event.target.closest('.btn_add-board');
 		if (addButton) {

@@ -43,25 +43,21 @@ function displayBoards(boards) {
 		boardItem.dataset.id = board.id;
 
 		// board icon
-
 		const img = document.createElement('img');
 		img.className = 'modal__board-item-icon';
 		img.src = board.icon;
 		img.alt = board.name;
 
 		// text container
-
 		const textContainer = document.createElement('div');
 		textContainer.className = 'modal__board-item-text';
 
 		// board title
-
 		const nameSpan = document.createElement('span');
 		nameSpan.className = 'modal__board-item-name';
 		nameSpan.textContent = board.name;
 
 		// board items
-
 		const countSpan = document.createElement('span');
 		countSpan.className = 'modal__board-item-count';
 		if (board.id === 'journaling') {
